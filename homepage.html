@@ -6,6 +6,52 @@
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         </head>
         <body>
+          <style>
+          .layout-transparent {
+          background: url('./res/img/sf.jpg') center / cover;
+      background-position: fixed;
+    }
+    .layout-transparent .mdl-layout__header,
+    .layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: white;
+    }
+          #fun{
+            background: rgba(0,0,0,.5);
+            padding: 10px;
+            right: 0;
+            position: fixed;
+          }
+          .mdl-layout__content, .mdl-grid, .demo-grid-2 {
+            height: 100%;
+    }</style>
+
+          <div class="layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Title</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
             <div>
                  HERE WHERE!!!! 
 	    </div>
@@ -19,7 +65,14 @@
    	           <div class="mdl-cell mdl-cell--7-col">1</div>
                    <div class="mdl-cell mdl-cell--7-col">1</div>
 	       </div>
-               <div class="mdl-cell mdl-cell--3-col">Side Bar</div>
+               <div id="fun" class="mdl-cell mdl-cell--3-col mdl-cell--top mdl-cell--stretch">
+            <h1>Quick Facts</h1>
+            <ul>
+              <li>Housing</li>
+              <li>Neighborhoods</li>
+              <li>Health</li>
+            </ul>
+         </div>
            </div>
            <div>
                 
