@@ -1,7 +1,6 @@
 
-.demo-card-square.mdl-card {
-  width: 320px;
-  height: 360px;
+.mdl-card {
+  height:100%;
 }
 .mdl-card__title {
   color: #000;
