@@ -81,32 +81,30 @@
         </div>
 
         <div id="city-info-sf" class="sidebar mdl-cell mdl-cell--3-col mdl-cell--top mdl-cell--stretch">
-        <div class="mdl-card mdl-shadow--2dp demo-card-square">
-          <iframe width="inherit" height="20%" frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+United+States&key=AIzaSyDqPEbf94pi9h6NH4_6y8NrWei28OU2PDc">
-          </iframe>
-          <div class="mdl-card__title">
-            <h3 class="mdl-card__title-text">City Profile</h3>
+          <div class="mdl-card mdl-shadow--2dp demo-card-square">
+            <iframe width="inherit" height="20%" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+United+States&key=AIzaSyDqPEbf94pi9h6NH4_6y8NrWei28OU2PDc">
+            </iframe>
+            <div class="mdl-card__title">
+              <h3 class="mdl-card__title-text">City Profile</h3>
+            </div>
+            <div id="sf-text" class="mdl-card__supporting-text"></div>
+            
+            <div class="mdl-card__actions mdl-card--border">
+              <a id="get-sf-more-info" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                More Information
+              </a>
+              <div style="display:none;" id="sf-more-info"> test chicken</div>
+            </div>
           </div>
-          <div id="sf-text" class="mdl-card__supporting-text"></div>
-          
-          <div class="mdl-card__actions mdl-card--border">
-            <a id="get-sf-more-info" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              More Information
-            </a>
-            <div style="display:none;" id="sf-more-info"> test chicken</div>
+          <div id="attraction-data" class="mdl-card mdl-shadow--2dp data-card">
+            <div class="mdl-card__supporting-text">
+              <h4>Top 10 Attractions in SF</h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./res/js/index.js"></script>
   </body>
-  <script>
-  var sf_info = "San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison." 
-  document.getElementById("sf-text").innerHTML = sf_info;
-  </script>
-  <script>
-  $("#get-sf-more-info").click(function(){
-    $("#sf-more-info").slideToggle();
-  })
-  </script>
 </html>
