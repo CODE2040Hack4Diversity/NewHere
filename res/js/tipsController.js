@@ -43,8 +43,8 @@ $("#get-sf-more-info").click(function(){
                       				  allTips[x].comment + 
                       			"</div>" +
                                 "<div class=\"interactive\">" +
-                                     "<div class=\"arrow-up\" id=\"upvote" + x.toString()  + "\">" + allTips[x].upvotes + "</div>" +
-                                     "<div class=\"arrow-down\" id=\"downvote" + x.toString()  + "\">" + allTips[x].downvotes + "</div>" +
+                                     "<div class=\"arrow-up\" id=\"upvote" + x.toString()  + "\">" + "    " + allTips[x].upvotes + "</div>" +
+                                     "<div class=\"arrow-down\" id=\"downvote" + x.toString()  + "\">" +  "    " +  allTips[x].downvotes + "</div>" +
                                 "</div>" +
                             "</div>" +
                      "</div>";
