@@ -9,23 +9,30 @@
 .adjustCellSize{
     height: 120px;
 }
+.crazy{
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
 
+}
 .cellText{
     display: flex;
-    justify-content: center; /* align horizontal */
     align-items: center;
-    vertical-align: middle;
-    padding-top: 84px;
-    color: yellow;
-    font-family: serif;
+    vertical-align: bottom;
+    padding-top: 25%;
+    color: black;
+    bottom: 0;
+    color: black;
     font-weight: bold;
-    font-size: xx-large;
-    font-style: italic;
+    font-size: 3em;
 }
 
 #cityName{
     text-align: center;
     color: white;
+    position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #transportion{

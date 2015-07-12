@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="./mdl/material.min.css">
-		<script src="./mdl/material.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <link rel="stylesheet" href="./mdl/material.min.css">
+          <script src="./mdl/material.min.js"></script>
+          <script src="./res/js/tipsController.js"></script>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+          <link rel="stylesheet" href="./res/css/style.css">
 	</head>
 	<body>
 		<!-- Uses a transparent header that draws on top of the layout's background -->
-		<style>
-		.layout-transparent {
-		  background: url('./res/img/sf.jpg') center / cover;
-		  background-position: fixed;
-		}
-		.layout-transparent .mdl-layout__header,
-		.layout-transparent .mdl-layout__drawer-button {
-		  /* This background is dark, so we set text to white. Use 87% black instead if
-		     your background is light. */
-		  color: white;
-		}
-
-    .demo-card-square .mdl-card {
-    width: 320px;
-    height: 320px;
-  }
-  .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background:
-      url('./res/img/sf.jpg') bottom right 15% no-repeat #46B6AC;
-  }
-		</style>
 		<div class="layout-transparent mdl-layout mdl-js-layout">
-		  <header class="mdl-layout__header mdl-layout__header--transparent">
-		    <div class="mdl-layout__header-row">
-		      <!-- Title -->
-		      <span class="mdl-layout-title">New Here</span>
-		      <!-- Add spacer, to align navigation to the right -->
-		      <div class="mdl-layout-spacer"></div>
-		      <!-- Navigation -->
-		      <nav class="mdl-navigation">
-		        <a class="mdl-navigation__link" href="">Housing</a>
-		        <a class="mdl-navigation__link" href="">Neighborhoods</a>
-		        <a class="mdl-navigation__link" href="">Transportation</a>
-		        <a class="mdl-navigation__link" href="">Shopping</a>
-		      </nav>
-		    </div>
-		  </header>
+      <div id="crazy" class="layout-transparent mdl-layout mdl-js-layout">
 		  <main class="mdl-layout__content">
+        <select>
+        <option>Select Your City</option>
+        <option>San Francisco</option>
+      </select>
 		  </main>
+    </div>
 		</div>
 	</body>
 </html>

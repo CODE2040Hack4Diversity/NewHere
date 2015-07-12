@@ -7,6 +7,12 @@
   padding-bottom: 0;
 }
 
+#crazy{
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.50);
+
+}
+
 body {
   padding: 0px;
   background: #fafafa;
@@ -16,6 +22,11 @@ body {
 .layout-transparent {
   background: url('../img/sf.jpg') center / cover;
   background-position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background 2.25s ease-in-out;
+   -moz-transition: background 2.25s ease-in-out;
+   -webkit-transition: background 2.25s ease-in-out;
+   }
   }
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
@@ -27,7 +38,6 @@ body {
   /*background: rgba(0,0,0,.5);*/
   padding: 0px;
   right: 0;
-  position: fixed;
   margin: 0;
 }
 .tips-list {
@@ -67,4 +77,22 @@ body {
 
 .interactive{
   width: 20px;
+}
+
+select {
+  font-size: 12rem;
+  padding: 0 .95em;
+  border: 0px solid;
+  position:absolute;
+  bottom: 10%;
+  right: 10%;
+  background-color: transparent;
+}
+
+input{
+    border: 0px solid;
+    margin: 55px;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 .35em;
 }
