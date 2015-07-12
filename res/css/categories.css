@@ -1,0 +1,95 @@
+/*center the categories*/
+.centerMiddle {
+    position: absolute;
+    width: 100%;
+    left: 25%;
+    top: 50%;
+}
+
+.fadeImage{
+
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    width: 100%;
+}
+
+.adjustCellSize{
+    height: 120px;
+}
+
+.cellText{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 60px;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#cityName{
+    text-align: center;
+    color: white;
+}
+
+#transportion{
+    background-image: url('../img/transportation.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#food{
+    background-image: url('../img/food.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#activities{
+    background-image: url('../img/ballon.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#housing{
+    background-image: url('../img/housing.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#tips{
+    background-image: url('../img/flags.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+#health{
+    background-image: url('../img/health.jpg');
+    background-position: center center;
+    background-position-y: 0px;
+}
+
+#titleNabar{
+    width: 100%;
+    background-position: center center;
+    height: 600px;
+    background-image: url(../img/sf.jpg);
+
+}
+
+@media only screen and (max-width:700px){
+    .cellText{
+        display: flex;
+        justify-content: center; /* align horizontal */
+        align-items: center;
+        vertical-align: middle;
+        padding-top: 50px;
+        color: yellow;
+        font-family: serif;
+        font-weight: bold;
+        font-size: x-large;
+        font-style: italic;
+    }
+
+}
