@@ -1,11 +1,48 @@
-.demo-card-wide.mdl-card {
-    width: 512px;
+.mdl-card {
+  height:100%;
+}
+.mdl-card__title {
+  color: #000;
+  padding-top: 2em;
+  padding-bottom: 0;
+}
+
+body {
+  padding: 0px;
+  background: #fafafa;
+  position: relative;
+}
+
+.layout-transparent {
+  background: url('../img/sf.jpg') center / cover;
+  background-position: fixed;
   }
-  .demo-card-wide > .mdl-card__title {
-    color: #fff;
-    height: 176px;
-    background: url('../assets/demos/welcome_card.jpg') center / cover;
-  }
-  .demo-card-wide > .mdl-card__menu {
-    color: #fff;
-  }
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+.sidebar{
+  /*background: rgba(0,0,0,.5);*/
+  padding: 0px;
+  right: 0;
+  position: fixed;
+  margin: 0;
+}
+.tips-list {
+  padding: 0px;
+  margin: 0 0;
+}
+.tip-card {
+  width: initial;
+  min-height: inherit;
+}
+.category {
+  padding: 0;
+  margin: 10px;
+}
+.mdl-layout__content, .mdl-cell--3-col, .mdl-grid, .demo-grid-2 {
+  height: 100%;
+}
+
