@@ -5,6 +5,7 @@
           <link rel="stylesheet" href="./mdl/material.min.css">
           <script src="./mdl/material.min.js"></script>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+          <link rel="stylesheet" href="./res/css/style.css">
   </head>
   <body>
 
@@ -34,17 +35,52 @@
           <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
-      <div class="demo-grid-ruler mdl-grid">
-        <div class="mdl-cell mdl-cell--9-col">Tips
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-        <div class="mdl-cell mdl-cell--7-col">1</div>
-      </div>
-      
-      <div id="city-info-sf" class="fun mdl-cell mdl-cell--3-col mdl-cell--top mdl-cell--stretch">
+
+      <div class="category demo-grid-ruler mdl-grid">
+        <div class="tips-list mdl-cell mdl-cell--9-col">Tips
+          <div class="mdl-cell mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-shadow--2dp tip-card">
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-shadow--2dp tip-card">
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-shadow--2dp tip-card">
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-shadow--2dp tip-card">
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-shadow--2dp tip-card">
+              <div class="mdl-card__supporting-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Mauris sagittis pellentesque lacus eleifend lacinia...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="city-info-sf" class="sidebar mdl-cell mdl-cell--3-col mdl-cell--top mdl-cell--stretch">
         <div class="mdl-card mdl-shadow--2dp demo-card-square">
           <iframe width="inherit" height="20%" frameborder="0" style="border:0"
           src="https://www.google.com/maps/embed/v1/place?q=San+Francisco,+CA,+United+States&key=AIzaSyDqPEbf94pi9h6NH4_6y8NrWei28OU2PDc">
@@ -59,50 +95,11 @@
               More Information
             </a>
             <div style="display:none;" id="sf-more-info"> test chicken</div>
-
           </div>
         </div>
       </div>
     </div>
   </body>
-  
-  <style>
-  .mdl-card__title {
-    color: #000;
-    padding-top: 2em;
-    padding-bottom: 0;
-  }
-  .mdl-card{
-    height: 100%;
-  }
-
-  body {
-    padding: 0px;
-    background: #fafafa;
-    position: relative;
-  }
-
-  .layout-transparent {
-    background: url('./res/img/sf.jpg') center / cover;
-    background-position: fixed;
-    }
-  .layout-transparent .mdl-layout__header,
-  .layout-transparent .mdl-layout__drawer-button {
-    /* This background is dark, so we set text to white. Use 87% black instead if
-       your background is light. */
-    color: white;
-  }
-  .fun{
-    /*background: rgba(0,0,0,.5);*/
-    padding: 0px;
-    right: 0;
-    position: fixed;
-    margin: 0;
-  }
-  .mdl-layout__content, .mdl-cell--3-col, .mdl-grid, .demo-grid-2 {
-    height: 100%;
-  }
-  </style>
   <script>
   var sf_info = "San Francisco, in northern California, is a city on the tip of a peninsula surrounded by the Pacific Ocean and San Francisco Bay. It's known for its hilly landscape, year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses. The Financial District's Transamerica Pyramid is its most distinctive skyscraper. In the bay sits Alcatraz Island, site of the notorious former prison." 
   document.getElementById("sf-text").innerHTML = sf_info;
