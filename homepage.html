@@ -4,6 +4,7 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
           <link rel="stylesheet" href="./mdl/material.min.css">
           <script src="./mdl/material.min.js"></script>
+          <script src="./res/js/tipsController.js"></script>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <link rel="stylesheet" href="./res/css/style.css">
   </head>
@@ -66,27 +67,7 @@
   document.getElementById("sf-text").innerHTML = sf_info;
   </script>
   <script>
-  $("#get-sf-more-info").click(function(){
-    $("#sf-more-info").slideToggle();
-  })
-
-  window.onload = function(){
-     for(x=0; x<9;x++) {
-       var tip = document.createElement('div');
-       tip.className = "mdl-cell mdl-cell--7-col";
-
-       var innerHtml =    "<div class=\"mdl-cell mdl-cell--12-col-desktop\">" +
-                          "<div class=\"mdl-card mdl-shadow--2dp tip-card\">" +
-                          "<div class=\"mdl-card__supporting-text\">"+
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                          "Mauris sagittis pellentesque lacus eleifend lacinia..." +
-                          "</div>" +
-                          "</div>" +
-                          "</div>";
-      tip.innerHTML = innerHtml; 
-      document.getElementById('tipsContainer').appendChild(tip);
-      }
-  }
+  
                  
   </script>
 </html>
