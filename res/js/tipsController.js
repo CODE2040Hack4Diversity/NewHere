@@ -55,12 +55,12 @@ $("#get-sf-more-info").click(function(){
   		var upvote = document.getElementById("upvote" + x.toString());
   		var downvote = document.getElementById("downvote" + x.toString());
 
-  		upvote.onclick = function() {
-  			increaseVotes();
+  		upvote.onclick = function(event) {
+  			increaseVotes(this.id.charAt(6));
  		 }
 
   		downvote.onclick = function() {
-			decreaseVotes();
+          decreaseVotes(this.id.charAt(8));
   		}
   	}
  }
@@ -77,8 +77,7 @@ $("#get-sf-more-info").click(function(){
  	}
  }
 
- function increaseVotes(){
- 	var amt = 0;
+ function increaseVotes(amt){
  	var thisTip = allTips[amt];
  	thisTip.upvotes = thisTip.upvotes + 1;
  	allTips[amt] = thisTip;
@@ -89,10 +88,9 @@ $("#get-sf-more-info").click(function(){
 
 
 
- function decreaseVotes(){
- 	var amt = 0;
-    var thisTip = allTips[amt];
-    thisTip.downvotes = thisTip.downvotes + 1;
+ function decreaseVotes(amt){
+  var thisTip = allTips[amt];
+  thisTip.downvotes = thisTip.downvotes + 1;
  	allTips[amt] = thisTip;
  	allTips.sort(compare)
  	document.getElementById("tipsContainer").innerHTML = "";

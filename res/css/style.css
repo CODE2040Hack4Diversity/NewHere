@@ -67,4 +67,9 @@ body {
 
 .interactive{
   width: 20px;
+  float: left;
+}
+
+.stats{
+  
 }
